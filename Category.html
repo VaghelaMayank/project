@@ -87,24 +87,18 @@ h1{
 }
    </style>
    <script>
-    window.onload = function () {
-      let buttons = document.getElementById("adopt-button");
-        buttons.addEventListener("click",function () {
-          window.location.href ="file:///D:/project/project%20card.html"; 
-        });
-      let button = document.getElementById("output");
-        button.addEventListener("click",function () {
-          window.location.href ="file:///D:/project/birds/birds.html"; 
-        });
+    window.onload=function(){
 
-        let buttonss = document.getElementById("adopt");
-        buttonss.addEventListener("click",function () {
-          window.location.href ="file:///D:/project/others/others.html"; 
+        let buttons = document.querySelectorAll(".adopt-button");
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                window.location.href = "file:///C:/SEM-2%20PRACTICALS/HTML/PROJECT/project%20form.html";
+            });
         });
-
-    };
+    }
    </script>
 </head>
+
 <body>
   <br><br> <center> <h1>Find Your Favorite Pets</h1></center><br><br>
     <div class="card-container">
@@ -113,19 +107,19 @@ h1{
             <div class="card-content">
                 <h3><center>Dogs</center></h3>
                 <p><center>Loyal Companions Ready to join your adventures.</center></p><br>
-                <center><button type="button" id="adopt-button">See More -></button></center>
+                <center><button type="button" class="adopt-button">See More -></button></center>
 
                
             </div>
 
         </div>
         <div class="card">
-            <img src="project card/birds.webp">
+            <img src="project card/jarman safed.jpeg.jpg">
             <div class="card-content">
                 <h3><center>Birds</center></h3>
                 <p><center>Colorful friends that bring song and joy to your home. </center></p><br>
                 
-                <center><button type="button" id="output">See More -></button></center>
+                <center><button type="button" class="adopt-button">See More -></button></center>
                 
 
                 <br>
@@ -134,13 +128,13 @@ h1{
 
         </div>
         <div class="card">
-            <img src="project card/others.jpg">
+            <img src="project card/jarman safed.jpeg.jpg">
             <div class="card-content">
                 <h3><center>Others</center></h3>
                 <p><center>Independent spirits with Endless affection to give.</center></p><br>
                 
                
-                <center><button type="button" id="adopt">See More -></button></center>
+                <center><button type="button" class="adopt-button">See More -></button></center>
 
                 <br>
                
